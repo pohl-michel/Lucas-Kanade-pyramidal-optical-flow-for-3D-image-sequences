@@ -20,7 +20,7 @@ path_par = load_path_parameters3D();
 
 % Input image sequences
 input_im_dir_suffix_tab = [
-   string('111_HM10395 4DCBCT');
+   string('111_HM10395 4DCT');
     ];
     % The names of the image sequences for which the DVF needs to be calculated are placed inside the array above.
 
