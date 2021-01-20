@@ -19,6 +19,17 @@ function [ path_par ] = load_path_parameters3D()
     % directory for saving log files
     path_par.txt_file_dir = 'Log files';
 
+    % check if the directories above exist and create them if they do not
+    if ~exist(path_par.temp_im_dir, 'dir')
+       mkdir(path_par.temp_im_dir)
+    end    
+    if ~exist(path_par.temp_var_dir, 'dir')
+       mkdir(path_par.temp_var_dir)
+    end  
+    if ~exist(path_par.txt_file_dir, 'dir')
+       mkdir(path_par.txt_file_dir)
+    end   
+
     % image sequence parameters txt filename
     path_par.im_seq_par_txt_filename = 'Image sequence parameters.txt';
     % optical flow parameters filename
