@@ -20,7 +20,6 @@ The resulting DVF, the DVF visualization, and the evaluation log file
 will respectively be saved in the folders "Optical flow calculation results mat files",
 "Optical flow projection images" and "Log files".
 The root-mean-square error (RMSE) of the registration can be found in that log file.
-These three folders need to be created manually before running the main function.
 
 We also included a 4DCT sequence of the tumor of a patient with lung cancer,
 acquired by a 16-slice helical CT simulator (Brilliance Big Bore, Philips Medical System)
