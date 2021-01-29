@@ -49,7 +49,7 @@
            K_3DSchaar_z(:,:,3) = -[1, 30, 1; 30, 100, 30; 1, 30, 1];
            spatial_grad_I(:,:,:,3) = convn(I, K_3DSchaar_z, 'same');
            
-           spatial_grad_I = (1/512)*spatial_grad_I;
+           spatial_grad_I = (1/448)*spatial_grad_I;
         
 	end
     
