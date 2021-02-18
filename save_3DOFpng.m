@@ -50,6 +50,7 @@ function save_3DOFpng(beh_par, path_par, disp_par, OF_par, im_par)
         u_t_2D(:,:,2) = transpose ( squeeze( u_t(disp_par.Ycs_after_crop, :, :, 3) ) ) ; % 2nd component in 2D = Z component in 3D
         
         f = figure;        
+        % im2D_t1(:) = 0; % 
         imshow(im2D_t1, []);      
         set(gcf, 'units','normalized','outerposition',[0 0 1 1]);
         

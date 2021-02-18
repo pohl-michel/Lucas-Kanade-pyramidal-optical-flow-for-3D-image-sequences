@@ -1,5 +1,5 @@
-This program computes the deformation vector field (DVF) of a series of 3D images,
-and more precisely, registers the first image to the others,
+This program computes the deformation vector field (DVF) of a series of 3D images.
+It registers the first image with the others
 by using the pyramidal Lucas-Kanade optical flow algorithm.
 
 Our implementation is based on the following research article (there are some small differences though) :
@@ -13,20 +13,24 @@ Parameters concerning the image sequence itself, the DVF calculation, and the DV
 are located respectively in the "3Dim_seq_par.xlsx" file, the "3DOF_calc_par.xlsx" file, and the "3Ddisp_par.xlsx" file.
 
 The behavior of the program is controlled by the structure beh_par defined in "load_behavior_parameters3D()",
-and this structure's fields can be changed manually.
-Also, the name of the input sequences for which one wants to compute the DVF needs to be written in the "input_im_dir_suffix_tab" array.
+and its fields can be changed manually.
+Also, the name of the input sequences whose DVF is computed needs to be specified in the "input_im_dir_suffix_tab" array.
 
 The resulting DVF, the DVF visualization, and the evaluation log file 
-will respectively be saved in the folders "Optical flow calculation results mat files",
+will be saved respectively in the folders "Optical flow calculation results mat files",
 "Optical flow projection images" and "Log files".
 The root-mean-square error (RMSE) of the registration can be found in that log file.
 
-We also included a 4DCT sequence of the tumor of a patient with lung cancer,
+We also included three 4DCT sequences of tumors of patients with lung cancer,
 acquired by a 16-slice helical CT simulator (Brilliance Big Bore, Philips Medical System)
 in Virginia Commonwealth University Massey Cancer Center,
-which comes from the Cancer Imaging Archive open database.
+which were downloaded from the Cancer Imaging Archive open database.
 
-More details about this sequence can be found in :
+Also, by running "Lucas_Kanade_Pyramidal_Optical_Flow_Optimization_Main.m", one can perform hyper-parameter optimization by grid search to find an accurate DVF.
+The hyper-parameters grid is specified in the file "load_3DOF_hyperparameters.m".
+The results of the optimization is saved in the files "DVF optim log file.txt" and "DVF hyperpar influence (date and time).txt" 
+
+More details about these sequences can be found in :
 Hugo, Geoffrey D., Weiss, Elisabeth, Sleeman, William C., Balik, Salim, Keall, Paul J., Lu, Jun, & Williamson, Jeffrey F. (2016). Data from 4D Lung Imaging of NSCLC Patients. The Cancer Imaging Archive. http://doi.org/10.7937/K9/TCIA.2016.ELN8YGLE
 Hugo, G. D., Weiss, E., Sleeman, W. C., Balik, S., Keall, P. J., Lu, J. and Williamson, J. F. (2017), A longitudinal four-dimensional computed tomography and cone beam computed tomography dataset for image-guided radiation therapy research in lung cancer. Med. Phys., 44: 762–771. doi:10.1002/mp.12059
 S. Balik et al., “Evaluation of 4-Dimensional Computed Tomography to 4-Dimensional Cone-Beam Computed Tomography Deformable Image Registration for Lung Cancer Adaptive Radiation Therapy.” Int. J. Radiat. Oncol. Biol. Phys. 86, 372–9 (2013) PMCID: PMC3647023.
