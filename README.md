@@ -2,7 +2,7 @@ This program computes the deformation vector field (DVF) of a series of 3D image
 It registers the first image with the others
 by using the pyramidal Lucas-Kanade optical flow algorithm.
 
-The animation below shows the computed DVFs (actually the 2D coronal projection of the computed 3D DVFs) corresponding to the motion of a lung tumor on top of the initial tumor image (actually the cooronal cross-section of that initial 3D image). The vectors point up and down as the tumor moves with the breathing motion.
+The animation below shows the computed DVFs (the 2D coronal projection of the computed 3D DVFs) corresponding to the motion of a lung tumor on top of the initial tumor image (the coronal cross-section of the initial 3D image). The vectors point up and down as the tumor moves with the breathing motion.
 
 <img src="3DOF_4DCT.gif" width="40%" height="40%"/>
 
