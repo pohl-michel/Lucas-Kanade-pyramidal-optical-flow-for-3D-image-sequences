@@ -1,5 +1,6 @@
 This repository is the first of a series of three repositories containing code that we used in the research corresponding to the following article:
-Prediction of the motion of chest internal points using a recurrent neural network trained with real-time recurrent learning for latency compensation in lung cancer radiotherapy,
+
+Michel Pohl, Mitsuru Uesaka, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, "Prediction of the motion of chest internal points using a recurrent neural network trained with real-time recurrent learning for latency compensation in lung cancer radiotherapy",
 Computerized Medical Imaging and Graphics,
 Volume 91,
 2021,
@@ -21,7 +22,7 @@ The animation below shows the computed DVFs (the 2D coronal projection of the co
 
 <img src="3DOF_4DCT.gif" width="40%" height="40%"/>
 
-Our implementation is based on the following research article (there are some small differences though) :
+Our implementation is based on the following research article (there are some small differences though):
 Bouguet, Jean-Yves, 
 "Pyramidal implementation of the affine Lucas Kanade feature tracker description of the algorithm.", 
 Intel corporation 5.1-10 (2001): 4. 
@@ -31,13 +32,13 @@ The input image sequence is placed in the "Input images" folder.
 Parameters concerning the image sequence itself, the DVF calculation, and the DVF display
 are located respectively in the "3Dim_seq_par.xlsx" file, the "3DOF_calc_par.xlsx" file, and the "3Ddisp_par.xlsx" file.
 
-The behavior of the program is controlled by the structure beh_par defined in "load_behavior_parameters3D()",
+The behavior of the program is controlled by the `beh_par` structure defined in `load_behavior_parameters3D()`,
 and its fields can be changed manually.
-Also, the name of the input sequences whose DVF is computed needs to be specified in the "input_im_dir_suffix_tab" array.
+Also, the name of the input sequences whose DVF is computed needs to be specified in the `input_im_dir_suffix_tab` array.
 
-The resulting DVF, the DVF visualization, and the evaluation log file 
+The resulting DVF, the DVF visualization, and the evaluation log files 
 will be saved respectively in the folders "Optical flow calculation results mat files",
-"Optical flow projection images" and "Log files".
+"Optical flow projection images", and "Log files".
 The root-mean-square error (RMSE) of the registration can be found in that log file.
 
 We also included three 4DCT sequences of tumors of patients with lung cancer,
