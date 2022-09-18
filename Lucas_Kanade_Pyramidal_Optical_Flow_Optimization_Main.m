@@ -4,8 +4,9 @@
 % Author : Pohl Michel
 % Date : Feb. 16th, 2021
 % Version : v1.0
-% License : 3-clause BSD Licenseclear all
+% License : 3-clause BSD License
 
+clear all
 close all
 clc
 
