@@ -1,10 +1,10 @@
 function [ OFeval_par ] = load_3DOF_hyperparameters()
-% Hyperparameters used when optimizing the deformation vector field by gridsearch
+% Hyperparameters used when optimizing the deformation vector field by grid search
 %
 % Author : Pohl Michel
 % Date : Feb. 16th, 2021
 % Version : v1.0
-% License : 3-clause BSD Licenseclear all
+% License : 3-clause BSD License
 
 % Threshold below which the image structure tensor is probably non invertible and the pseudo inverse is used for inversion.
 OFeval_par.epsilon_detG = 0.001;
