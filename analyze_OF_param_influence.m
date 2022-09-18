@@ -4,7 +4,7 @@ function analyze_OF_param_influence( rms_error_all_seq, OFeval_par, beh_par, pat
 % Author : Pohl Michel
 % Date : Feb. 16th, 2021
 % Version : v1.0
-% License : 3-clause BSD Licenseclear all
+% License : 3-clause BSD License
 
     [~,~,~,~,~,nb_seq] = size(rms_error_all_seq);
     length_sg_init_tab = length(OFeval_par.sigma_init_tab);
