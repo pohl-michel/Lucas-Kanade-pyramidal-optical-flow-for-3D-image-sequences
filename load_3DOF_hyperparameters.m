@@ -15,7 +15,7 @@ OFeval_par.sigma_init_tab = [0.2, 0.5, 1.0, 2.0];
 % Standard deviation of the Gaussian filter used for filtering each layer of the pyramid
 OFeval_par.sigma_subspl_tab = [0.2, 0.5, 1.0, 2.0];
 
-% Choice of the method for calculating the gradient method
+% Choice of the method used to calculate the gradient
 OFeval_par.grad_meth = 2;
     % 2 : Scharr gradient
     % 1 : Central difference
