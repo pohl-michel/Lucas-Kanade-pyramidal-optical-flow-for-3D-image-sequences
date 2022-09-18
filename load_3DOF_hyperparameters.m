@@ -9,10 +9,10 @@ function [ OFeval_par ] = load_3DOF_hyperparameters()
 % Threshold below which the image structure tensor is probably non invertible and the pseudo inverse is used for inversion.
 OFeval_par.epsilon_detG = 0.001;
 
-% Standard deviation of the Gaussian filter using for filtering the initial image
+% Standard deviation of the Gaussian filter used for filtering the initial image
 OFeval_par.sigma_init_tab = [0.2, 0.5, 1.0, 2.0];
 
-% Standard deviation of the Gaussian filter using for filtering each layer of the pyramid
+% Standard deviation of the Gaussian filter used for filtering each layer of the pyramid
 OFeval_par.sigma_subspl_tab = [0.2, 0.5, 1.0, 2.0];
 
 % Choice of the method for calculating the gradient method
@@ -34,7 +34,7 @@ OFeval_par.sigma_LK_tab = [1.0, 2.0, 3.0, 4.0];
 OFeval_par.nb_layers_min = 1;
 OFeval_par.nb_layers_max = 4;
 
-% Number of iterations of refining the DVF at each layer
+% Number of iterations for refining the DVF at each layer
 OFeval_par.nb_min_iter = 1;
 OFeval_par.nb_max_iter = 3;
 
