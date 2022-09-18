@@ -4,7 +4,7 @@ function [ rms_error, best_par ] = rms_of3D( beh_par, OFeval_par, path_par, im_p
 % Author : Pohl Michel
 % Date : Feb. 16th, 2021
 % Version : v1.0
-% License : 3-clause BSD Licenseclear all
+% License : 3-clause BSD License
 
     length_sigma_LK_tab = length(OFeval_par.sigma_LK_tab);
     length_sigma_init_tab = length(OFeval_par.sigma_init_tab);
