@@ -2,13 +2,19 @@
 % provides images of that DVF projected in cross-sections and calculates the root-mean square registration error of the calculated DVF.
 % 
 % Author : Pohl Michel
-% Date : July 16th, 2020
-% Version : v1.0
+% Date : Sept 19th, 2022
+% Version : v1.1
 % License : 3-clause BSD License
 
 clear all
 close all
 clc
+
+addpath(genpath('1._Optical_flow_calculation'))    
+addpath(genpath('2._Optical_flow_evaluation'))    
+addpath(genpath('3._Auxiliary_functions_(calculus)'))    
+addpath(genpath('4._Auxiliary_functions_(loading_saving_files_and_parameters)')) 
+
 
 %% PARAMETERS 
 
