@@ -9,10 +9,10 @@ function [rms] = evalOF(im_par,path_par,OF_par,beh_par)
 
     rms_t = zeros(im_par.nb_im -1, 1, 'single');
 
-    % chargement de l'image à t=1
+    % chargement de l'image Ã  t=1
     I = load_crop_filter3D(1, false, false, 0, im_par, path_par.input_im_dir);   
     for t=2:im_par.nb_im
-        % chargemnet de l'image à t
+        % chargement de l'image Ã  t
         J = load_crop_filter3D(t, false, false, 0, im_par, path_par.input_im_dir);  
         % loading optical flow at time t
         OF_t_filename = write_3DOF_t_mat_filename( OF_par, path_par, t );
