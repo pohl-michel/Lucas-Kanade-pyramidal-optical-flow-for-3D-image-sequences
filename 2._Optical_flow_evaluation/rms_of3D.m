@@ -95,6 +95,15 @@ function [ rms_error, best_par ] = rms_of3D( beh_par, OFeval_par, path_par, im_p
     % Finding the best parameters
     best_par.rms_error = min(min(min(min(min(rms_error)))));
     lin_idx_min = find(rms_error== best_par.rms_error);
+    
+        
+    % If there are several values for which the minimum rmse is attained, we select one of these.
+    % In practice, this happens when the minimum corresponds to optimal computation with 1 layer, and if this happens any value of sigma_subspl would give the same DVF.
+    % In that case, we select the lowest value of sigma_subspl in OFeval_par.sigma_subspl_tab.
+    if length(lin_idx_min) > 1
+        lin_idx_min = lin_idx_min(1);
+    end
+    
     [lyr_idx, sigma_LK_tab_idx, nb_iter_idx, sg_init_idx, sigma_subspl_idx] = ind2sub(size(rms_error), lin_idx_min);
     best_par.nb_layers = lyr_idx + OFeval_par.nb_layers_min -1;
     best_par.sigma_LK = OFeval_par.sigma_LK_tab(sigma_LK_tab_idx);
