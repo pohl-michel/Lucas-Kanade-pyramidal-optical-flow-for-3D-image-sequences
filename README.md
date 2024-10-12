@@ -51,3 +51,8 @@ The hyper-parameters grid is specified in the file "load_3DOF_hyperparameters.m"
 The results of the optimization is saved in the files "DVF optim log file.txt" and "DVF hyperpar influence (date and time).txt" 
 
 The images that we used come from the TCIA 4D-lung dataset publicly available here: https://wiki.cancerimagingarchive.net/display/Public/4D-Lung
+
+----------------------------------------------
+Update (10th October 2024): An adaptation of the code in this repository for 2D image registration (instead of 3D) is available here: https://github.com/pohl-michel/2D-MR-image-prediction. That new repository focuses mainly on video forecasting but it contains an implementation of the iterative and pyramidal Lucas-Kanade optical flow algorithm and a script to perform parameter optimization with grid search as well.
+
+
