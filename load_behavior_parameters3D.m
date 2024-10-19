@@ -10,11 +10,14 @@ function [ beh_par ] = load_behavior_parameters3D()
 beh_par.SAVE_OF_PNG = true;
     % If SAVE_OF_PNG is set to true, the algorithm will save images of the DVF projected in cross-sections 
 
-beh_par.CROP_FOR_DISP_SAVE = true;
+beh_par.CROP_FOR_DISP_SAVE = false;
     % if CROP_FOR_DISP_SAVE is set to true, then the optical flow is displayed only around the
     % tumor area, or the area specified by x_m, x_M, y_m, y_M, z_m, z_M. 
     
 beh_par.EVALUATE_IN_ROI = true;
     % if EVALUATE_IN_ROI is set to true, the RMS registration error is calculated using only the pixels in the region of interest (ROI)
+
+beh_par.IS_BACKGROUND_FIRST_IMG = false; 
+    % if set to true, the first image will stay static when displaying the optical flow pngs, otherwise the image at time t is displayed in the background
 
 end
