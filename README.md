@@ -18,9 +18,11 @@ The code in this repository computes the deformation vector field (DVF) of a ser
 Please kindly consider citing our article if you use this code in your research. Also, please do not hesitate to look at the other two repositories mentioned above.
 
 
-The animation below shows the computed DVFs (the 2D coronal projection of the computed 3D DVFs) corresponding to the motion of a lung tumor on top of the initial tumor image (the coronal cross-section of the initial 3D image). The vectors point up and down as the tumor moves with the breathing motion.
+The animation below shows a tumor moving (mainly) vertically due to breathing in a 4DCT sequence, along with the time-varying DVF computed using the code in this repository. 
 
-<img src="3DOF_4DCT.gif" width="40%" height="40%"/>
+| Tumor motion along the coronal plane (2D projection of the computed 3D DVFs) between the reference frame and the other frames of a 4DCT sequence, computed using the iterative and pyramidal Lucas-Kanade optical flow . | Coronal cross-section of the 3D reference frame of the 4DCT sequence along with the region of interest and tumor contour.|
+| :--- | :---|
+| <center><img src="3DOF_4DCT.gif" width=50%/></center> | <img src="Input images/111_HM10395 4DCT/coronal_cross_section_with_roi_tumor_contour.jpg"/> |
 
 Our implementation is based on the following research article (there are some small differences though):
 Bouguet, Jean-Yves, 
