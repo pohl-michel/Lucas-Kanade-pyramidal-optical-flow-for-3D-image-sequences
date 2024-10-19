@@ -22,7 +22,7 @@ The animation below shows a tumor moving (mainly) vertically due to breathing in
 
 | Tumor motion along the coronal plane (2D projection of the computed 3D DVFs) between the reference frame and the other frames of a 4DCT sequence, computed using the iterative and pyramidal Lucas-Kanade optical flow . | Coronal cross-section of the 3D reference frame of the 4DCT sequence along with the region of interest and tumor contour.|
 | :--- | :---|
-| <center><img src="3DOF_4DCT.gif" width=50%/></center> | <img src="Input images/111_HM10395 4DCT/coronal_cross_section_with_roi_tumor_contour.jpg"/> |
+| <center><img src="3DOF_4DCT_111_HM10395.gif" style="width:50%; height:auto;"/></center> | <img src="Input images/111_HM10395 4DCT/coronal_cross_section_with_roi_tumor_contour.jpg"/> |
 
 Our implementation is based on the following research article (there are some small differences though):
 Bouguet, Jean-Yves, 
